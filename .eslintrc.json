@@ -18,9 +18,9 @@
   },
   "plugins": ["react", "simple-import-sort"],
   "rules": {
+    "react/react-in-jsx-scope": "off",
     /*Prettier preferences*/
     "prettier/prettier": ["error", { "singleQuote": true, "tabWidth": 2 }],
-    "react/react-in-jsx-scope": "off",
     /*From sort imports plugin*/
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
