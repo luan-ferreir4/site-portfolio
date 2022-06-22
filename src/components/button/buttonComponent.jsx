@@ -1,4 +1,4 @@
-import { ButtonFr } from '../styles/componentStyles/buttonComponentStyle';
+import { ButtonFr } from '../../styles/componentStyles/buttonComponentStyle';
 
 const ButtonComponent = ({ content }) => {
   return <ButtonFr>{content}</ButtonFr>;
