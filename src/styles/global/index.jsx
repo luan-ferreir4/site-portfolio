@@ -66,6 +66,19 @@ const GlobalStyles = createGlobalStyle`
     pointer-events: none;
   }
 
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--palette-one-white);
+    border-radius: 8px;
+  }
   `;
 
 export default GlobalStyles;
