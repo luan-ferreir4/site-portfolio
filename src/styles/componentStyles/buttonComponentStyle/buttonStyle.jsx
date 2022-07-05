@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ButtonFr = styled.button`
+export const MainButton = styled.button`
   width: fit-content;
   padding: 2px 20px;
 

@@ -1,7 +1,7 @@
-import { ButtonFr } from '../../styles/componentStyles/buttonComponentStyle';
+import { MainButton } from '../../styles/componentStyles/buttonComponentStyle/buttonStyle';
 
 const ButtonComponent = ({ content }) => {
-  return <ButtonFr>{content}</ButtonFr>;
+  return <MainButton>{content}</MainButton>;
 };
 
 export default ButtonComponent;
