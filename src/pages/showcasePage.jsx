@@ -1,9 +1,10 @@
+import { Showcase } from '../styles/pageStyles/showcasePage';
 const ShowcasePage = () => {
   return (
     <>
-      <main>
+      <Showcase>
         <h1>Hello showcase</h1>
-      </main>
+      </Showcase>
     </>
   );
 };
