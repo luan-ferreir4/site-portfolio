@@ -5,7 +5,7 @@ import {
   MobileContent,
 } from '../../styles/componentStyles/headerComponentStyles/headerStyle';
 import ButtonComponent from '../button/buttonComponent';
-import MobileMenu from './mobileMenu';
+import MobileMenu from './mobileMenuComponent';
 
 const HeaderComponent = () => {
   return (
