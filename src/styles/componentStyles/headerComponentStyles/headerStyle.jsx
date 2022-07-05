@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
 
