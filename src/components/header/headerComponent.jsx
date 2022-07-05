@@ -4,7 +4,7 @@ import {
   Header,
   MobileContent,
 } from '../../styles/componentStyles/headerComponentStyles';
-import ButtonComponent from '../buttonComponent';
+import ButtonComponent from '../button/buttonComponent';
 import MobileMenu from './mobileMenu';
 
 const HeaderComponent = () => {
