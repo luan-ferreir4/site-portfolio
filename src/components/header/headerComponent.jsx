@@ -3,7 +3,7 @@ import {
   DesktopContent,
   Header,
   MobileContent,
-} from '../../styles/componentStyles/headerComponentStyles';
+} from '../../styles/componentStyles/headerComponentStyles/headerStyle';
 import ButtonComponent from '../button/buttonComponent';
 import MobileMenu from './mobileMenu';
 

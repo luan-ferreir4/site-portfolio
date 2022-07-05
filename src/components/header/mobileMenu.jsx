@@ -1,7 +1,7 @@
 import { slide as Smenu } from 'react-burger-menu';
 import { RiMenu5Fill } from 'react-icons/ri';
 
-import { Menu } from '../../styles/componentStyles/headerComponentStyles/headerButtonsStyles';
+import { Menu } from '../../styles/componentStyles/headerComponentStyles/mobileMenuStyle';
 
 const MobileMenu = () => {
   const openMenu = () => {
