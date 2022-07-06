@@ -4,6 +4,15 @@ export const Landing = styled.main`
   height: 100vh;
   padding: 80px 0px 10px 0px;
 
+  .landingGreeting {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .landingGreeting__item {
+    font-weight: var(--font-w-regular);
+  }
+
   @media (min-width: 680px) {
     padding: 85px 30px 10px 30px;
   }

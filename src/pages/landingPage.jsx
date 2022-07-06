@@ -8,8 +8,10 @@ const LandingPage = () => {
     <>
       <HeaderComponent />
       <Landing>
-        <h1 className='landing__greeting'>{'< Olá >'}</h1>
-        <h1 className='landing__greeting'>{'< Bem vindo! >'}</h1>
+        <div className='landingGreeting'>
+          <h1 className='landingGreeting__item'>{'< Olá >'}</h1>
+          <h1 className='landingGreeting__item'>{'< Bem vindo! >'}</h1>
+        </div>
       </Landing>
       <Background>
         <img className={'reactBG'} src={react} alt='React' />
