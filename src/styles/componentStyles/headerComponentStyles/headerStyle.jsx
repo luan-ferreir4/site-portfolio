@@ -27,11 +27,12 @@ export const Header = styled.header`
 `;
 
 export const MobileContent = styled.section`
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  width: 100%;
 
   img {
     width: 78.36px;
@@ -45,14 +46,21 @@ export const MobileContent = styled.section`
 export const DesktopContent = styled.section`
   display: none;
   @media (min-width: 680px) {
-    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+
     img {
+      position: absolute;
+      right: 0;
+      left: 0;
+
       width: 100px;
+      margin: 0 auto;
     }
   }
 `;
