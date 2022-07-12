@@ -1,5 +1,5 @@
 import { slide as Smenu } from 'react-burger-menu';
-import { RiMenu5Fill } from 'react-icons/ri';
+import { RiMenu2Line } from 'react-icons/ri';
 
 import { Menu } from '../../styles/componentStyles/headerComponentStyles/mobileMenuStyle';
 
@@ -10,7 +10,7 @@ const MobileMenu = () => {
 
   return (
     <Menu>
-      <RiMenu5Fill className={'icon'} />
+      <RiMenu2Line className={'icon'} />
       <Smenu>
         <a id='home' className='menu-item' href='#'>
           Home
