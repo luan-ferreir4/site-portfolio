@@ -12,6 +12,15 @@ const LandingPage = () => {
           <h1 className='landingGreeting__item'>{'< Olá >'}</h1>
           <h1 className='landingGreeting__item'>{'< Bem vindo! >'}</h1>
         </div>
+
+        <div className='landingIntro'>
+          <h2 className='landingIntro__item'>
+            {'>> Meu nome é Luan Ferreira_'}
+          </h2>
+          <h2 className='landingIntro__item'>
+            {'>> Desenvolvedor Full stack_'}
+          </h2>
+        </div>
       </Landing>
       <Background>
         <img className={'reactBG'} src={react} alt='React' />
