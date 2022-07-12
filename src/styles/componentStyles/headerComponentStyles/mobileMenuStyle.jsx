@@ -1,19 +1,34 @@
 import styled from 'styled-components';
 
-export const Menu = styled.button`
-  background: transparent;
-  border: none;
+export const Menu = styled.div`
+  position: relative;
+
   width: 42px;
 
   .icon {
-    font-size: 28px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
     width: 85%;
-    margin: auto;
+    height: 28px;
+    margin: 1px auto;
+
+    color: var(--pallete-one-black);
+  }
+
+  .bm-burger-button {
+    position: relative;
+
+    width: 100%;
+    height: 30px;
+    margin: 0;
   }
 
   .bm-overlay {
     display: none;
   }
+
   .bm-menu-wrap {
     display: flex;
     flex-direction: row;
@@ -28,6 +43,7 @@ export const Menu = styled.button`
     width: inherit;
     height: 400px;
     margin-top: 70px;
+
     background: transparent;
   }
 
@@ -49,7 +65,7 @@ export const Menu = styled.button`
     margin-bottom: 18px;
     margin-left: 20px;
     padding-right: 24px;
-    color: black;
+    color: var(--pallete-one-black);
     border-bottom: 2px solid transparent;
 
     font-size: 32px;
