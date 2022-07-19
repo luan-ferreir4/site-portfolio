@@ -14,12 +14,8 @@ const LandingPage = () => {
         </div>
 
         <div className='landingIntro'>
-          <h2 className='landingIntro__item'>
-            {'>> Meu nome é Luan Ferreira_'}
-          </h2>
-          <h2 className='landingIntro__item'>
-            {'>> Desenvolvedor Full stack_'}
-          </h2>
+          <h2 className='landingIntro__item'>Meu nome é Luan Ferreira</h2>
+          <h2 className='landingIntro__item'>Desenvolvedor Full stack</h2>
         </div>
       </Landing>
       <Background>
