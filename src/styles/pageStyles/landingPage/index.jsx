@@ -13,10 +13,47 @@ export const Landing = styled.main`
     font-weight: var(--font-w-regular);
   }
 
+  .landingIntro {
+    padding: 0 0 0 4vw;
+  }
+
+  .landingIntro__item {
+    position: relative;
+    margin-bottom: 28px;
+
+    font-size: 23px;
+    font-weight: var(--font-w-regular);
+  }
+  .landingIntro__item::before {
+    content: '>> ';
+  }
+
   @media (min-width: 680px) {
-    padding: 85px 30px 10px 30px;
+    padding: 85px 0px 10px 0px;
+
+    .landingIntro {
+      margin-top: 80px;
+      padding: 0 0 0 5vw;
+    }
+
+    .landingIntro__item {
+      margin-bottom: 28px;
+
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
   }
   @media (min-width: 1024px) {
+    .landingIntro {
+      margin-top: 80px;
+      padding: 0 0 0 55px;
+    }
+    .landingIntro__item {
+      margin-bottom: 28px;
+
+      font-size: 38px;
+      letter-spacing: 4px;
+    }
   }
 `;
 
