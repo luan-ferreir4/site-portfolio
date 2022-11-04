@@ -19,6 +19,7 @@ export const Landing = styled.main`
 
   .landingIntro__item {
     position: relative;
+    z-index: -1;
     margin-bottom: 28px;
 
     font-size: 23px;
