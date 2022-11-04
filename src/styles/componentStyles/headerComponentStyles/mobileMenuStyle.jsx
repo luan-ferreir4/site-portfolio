@@ -54,7 +54,7 @@ export const Menu = styled.div`
     border-radius: 15px;
     padding: 20px 0;
 
-    background: white;
+    background: var(--palette-one-white);
     border-radius: 15px;
   }
 
