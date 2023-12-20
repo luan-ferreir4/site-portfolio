@@ -9,7 +9,7 @@ export const Header = styled.header`
   flex-direction: row;
 
   width: 95vw;
-  height: 52px;
+  height: 36px;
   padding: 16px 20px;
   margin: 15px auto;
 
@@ -35,7 +35,7 @@ export const MobileContent = styled.section`
   width: 100%;
 
   img {
-    width: 78.36px;
+    width: 70px;
   }
 
   @media (min-width: 680px) {
