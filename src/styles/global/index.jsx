@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
     --palette-one-white: #f2f2f2;
     --palette-one-gray-l: #797979;
     --palette-one-gray-m: #505050;
-    --pallete-one-black: #282828;
+    --pallete-one-black: #1c1c1c;
   }
 
   body {

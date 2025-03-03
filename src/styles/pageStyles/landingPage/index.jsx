@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Landing = styled.main`
   height: 100vh;
   padding: 80px 0px 10px 0px;
+  background-color: #1c1c1c;
 
   .landingGreeting {
     width: 90%;
@@ -18,12 +19,9 @@ export const Landing = styled.main`
   }
 
   .landingIntro__item {
-    position: relative;
-    z-index: -1;
     margin-bottom: 28px;
-
     font-size: 23px;
-    font-weight: var(--font-w-regular);
+    font-weight: var(--font-w-xlight);
   }
   .landingIntro__item::before {
     content: '>> ';
