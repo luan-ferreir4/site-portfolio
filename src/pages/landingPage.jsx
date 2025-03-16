@@ -1,5 +1,6 @@
 import python from '../assets/images/python-logo.svg';
 import react from '../assets/images/reactBG2.svg';
+import SymbolSample from '../assets/images/SymbolSample.svg'
 import HeaderComponent from '../components/header/headerComponent';
 import ContentSection from '../components/csection/contentSection';
 import { Background, Landing } from '../styles/pageStyles/landingPage';
@@ -9,6 +10,8 @@ const LandingPage = () => {
     <>
       <Landing>
         <ContentSection className='landingGreeting'>
+
+          <img className='landingGreeting__item' src={SymbolSample} alt='data-tags' />
 
           <h1 className='landingGreeting__item'>{'< Olá >'}</h1>
           <h1 className='landingGreeting__item'>{'< Bem vindo! >'}</h1>
