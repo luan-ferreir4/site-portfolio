@@ -12,7 +12,6 @@ const LandingPage = () => {
         <ContentSection className='landingGreeting'>
 
           <img className='landingGreeting__item' src={SymbolSample} alt='data-tags' />
-
           <h1 className='landingGreeting__item'>{'< Olá >'}</h1>
           <h1 className='landingGreeting__item'>{'< Bem vindo! >'}</h1>
 

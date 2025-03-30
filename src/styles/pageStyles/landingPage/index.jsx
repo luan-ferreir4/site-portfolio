@@ -11,7 +11,7 @@ export const Landing = styled.main`
     text-align: center;
   }
   .landingGreeting__item {
-    font-weight: var(--font-w-regular);
+    font-weight: var(--font-w-xlight);
   }
 
   .landingIntro {
