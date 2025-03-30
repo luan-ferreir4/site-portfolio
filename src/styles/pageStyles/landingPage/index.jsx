@@ -2,20 +2,37 @@ import styled from 'styled-components';
 
 export const Landing = styled.main`
   height: 100vh;
-  padding: 80px 0px 10px 0px;
-  background-color: #1c1c1c;
+  padding-bottom: 10px;
 
-  .landingGreeting {
-    width: 90%;
-    margin: 30px auto;
-    text-align: center;
+  
+  .sectionOne {
+    display: flex;
+    flex-direction: column;
+
+    position: relative; /* Keeps it as the reference for absolute positioning */
+    height: 900px;
+    width: 100%;
+  }
+  .landingGreeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 15%;
+    margin-bottom: 30%;
+    height: 12%;
   }
   .landingGreeting__item {
     font-weight: var(--font-w-xlight);
+    font-size: var(--font-size-xlarge);
+  }
+  .landingGreeting__item--img{
+    margin-bottom: 5px;
   }
 
   .landingIntro {
-    padding: 0 0 0 4vw;
+    height: 45%;
   }
 
   .landingIntro__item {
@@ -26,9 +43,23 @@ export const Landing = styled.main`
   .landingIntro__item::before {
     content: '>> ';
   }
+  .sectionOne_bkg{
+    position: absolute;
+    z-index: -1;
+  
+    top: 0; /* Now correctly positioned inside sectionOne */
+    left: 0;
+    width: 150%;
+    height: auto;
 
+    top: 45%;
+    left: 22vw;
+    /*border: 2px solid red;*/
+    
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
   @media (min-width: 680px) {
-    padding: 85px 0px 10px 0px;
 
     .landingIntro {
       margin-top: 80px;
@@ -53,49 +84,5 @@ export const Landing = styled.main`
       font-size: 38px;
       letter-spacing: 4px;
     }
-  }
-`;
-
-export const Background = styled.div`
-  height: 100vh;
-  position: relative;
-  z-index: -2;
-
-  .reactBG {
-    position: absolute;
-    left: -15%;
-    display: block;
-    z-index: -1;
-    width: 34vw;
-
-    object-fit: cover;
-    object-position: left top;
-
-    animation: App-logo-spin infinite 50s linear;
-
-    @keyframes App-logo-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg);
-      }
-    }
-  }
-
-  .pythonBG {
-    position: absolute;
-    right: -0%;
-    top: 70%;
-    z-index: -1;
-    width: 18vw;
-  }
-
-  @media (min-width: 680px) {
-    .pythonBG {
-      top: 100%;
-    }
-  }
-  @media (min-width: 1024px) {
   }
 `;
