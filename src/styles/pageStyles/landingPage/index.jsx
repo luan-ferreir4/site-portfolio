@@ -4,15 +4,20 @@ export const Landing = styled.main`
   height: 100vh;
   padding-bottom: 10px;
 
+  position: relative;
+  overflow: hidden;
   
   .sectionOne {
     display: flex;
     flex-direction: column;
 
-    position: relative; /* Keeps it as the reference for absolute positioning */
     height: 900px;
     width: 100%;
+
+    background: linear-gradient(to bottom, transparent, var(--pallete-one-black) 120%); /* ✅ Gradient fixed at bottom */
   }
+
+
   .landingGreeting{
     display: flex;
     flex-direction: column;
@@ -31,8 +36,11 @@ export const Landing = styled.main`
     margin-bottom: 5px;
   }
 
+
+
   .landingIntro {
     height: 45%;
+    margin-left: 5vw;
   }
 
   .landingIntro__item {
@@ -43,36 +51,50 @@ export const Landing = styled.main`
   .landingIntro__item::before {
     content: '>> ';
   }
+
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .sectionOne_bkg{
     position: absolute;
     z-index: -1;
   
-    top: 0; /* Now correctly positioned inside sectionOne */
     left: 0;
     width: 150%;
     height: auto;
 
-    top: 45%;
+    top: 350px;
     left: 22vw;
-    /*border: 2px solid red;*/
-    
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+
+    animation: spin 100s linear infinite;
   }
   @media (min-width: 680px) {
 
-    .landingIntro {
-      margin-top: 80px;
-      padding: 0 0 0 5vw;
+
+    .sectionOne {
+      height: 1120px;
     }
 
     .landingIntro__item {
       margin-bottom: 28px;
-
       font-size: 30px;
       letter-spacing: 3px;
     }
+
+
+    .sectionOne_bkg{
+      width: 100%;
+      top: 350px;
+      left: 46%;
   }
+}
+
+ 
   @media (min-width: 1024px) {
     .landingIntro {
       margin-top: 80px;
