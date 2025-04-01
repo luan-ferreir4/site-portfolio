@@ -1,7 +1,6 @@
 import python from '../assets/images/python-logo.svg';
 import react from '../assets/images/reactBG2.svg';
 import SymbolSample from '../assets/images/SymbolSample.svg'
-import HeaderComponent from '../components/header/headerComponent';
 import ContentSection from '../components/csection/contentSection';
 import { Landing } from '../styles/pageStyles/landingPage';
 
@@ -10,7 +9,6 @@ const LandingPage = () => {
     <>
       <Landing>
         <ContentSection className='sectionOne'>
-          {/* Move the background image directly inside sectionOne */}
           <img className='sectionOne_bkg' src={react} alt='React' />
 
           <div className='landingGreeting'>
@@ -23,6 +21,10 @@ const LandingPage = () => {
             <h2 className='landingIntro__item'>Meu nome é Luan Ferreira_</h2>
             <h2 className='landingIntro__item'>E este é meu portifólio_</h2>
           </div>
+        </ContentSection>
+        <ContentSection className='sectionTwo'>
+          <h1 className='landingGreeting__item'>{'>> Sobre mim'}</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis  augue non urna mollis efficitur. Etiam hendrerit tempus consequat.  Mauris non condimentum nisi. Fusce sed sapien eget eros venenatis  ultrices sit amet non dui. Morbi vitae aliquet elit. Phasellus posuere  enim diam, at placerat velit gravida vel. In hac habitasse platea  dictumst. In scelerisque eu mi eu dictum.</p>
         </ContentSection>
       </Landing>
       {/*

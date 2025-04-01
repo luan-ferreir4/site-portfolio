@@ -14,7 +14,7 @@ export const Landing = styled.main`
     height: 900px;
     width: 100%;
 
-    background: linear-gradient(to bottom, transparent, var(--pallete-one-black) 120%); /* ✅ Gradient fixed at bottom */
+    background: linear-gradient(to bottom, transparent 40%, var(--pallete-one-black) 88%);
   }
 
 
@@ -47,6 +47,7 @@ export const Landing = styled.main`
     margin-bottom: 28px;
     font-size: 23px;
     font-weight: var(--font-w-xlight);
+    font-size: var(--font-size-medium);
   }
   .landingIntro__item::before {
     content: '>> ';
@@ -68,7 +69,7 @@ export const Landing = styled.main`
     width: 150%;
     height: auto;
 
-    top: 350px;
+    top: 380px;
     left: 22vw;
 
     animation: spin 100s linear infinite;
