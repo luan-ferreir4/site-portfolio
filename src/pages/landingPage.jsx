@@ -23,8 +23,10 @@ const LandingPage = () => {
           </div>
         </ContentSection>
         <ContentSection className='sectionTwo'>
-          <h1 className='landingGreeting__item'>{'>> Sobre mim'}</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis  augue non urna mollis efficitur. Etiam hendrerit tempus consequat.  Mauris non condimentum nisi. Fusce sed sapien eget eros venenatis  ultrices sit amet non dui. Morbi vitae aliquet elit. Phasellus posuere  enim diam, at placerat velit gravida vel. In hac habitasse platea  dictumst. In scelerisque eu mi eu dictum.</p>
+          <img className='sectionTwo_bkg' src={python} alt='Python' />
+
+          <h1 className='landingGreeting__item title'>{'>> Sobre mim'}</h1>
+          <p className='landingResume__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis  augue non urna mollis efficitur. Etiam hendrerit tempus consequat.  Mauris non condimentum nisi. Fusce sed sapien eget eros venenatis  ultrices sit amet non dui. Morbi vitae aliquet elit. Phasellus posuere  enim diam, at placerat velit gravida vel. In hac habitasse platea  dictumst. In scelerisque eu mi eu dictum.</p>
         </ContentSection>
       </Landing>
       {/*

@@ -5,20 +5,6 @@ export const Landing = styled.main`
   padding-bottom: 10px;
 
   
-  /*.sectionOne {
-    display: flex;
-    flex-direction: column;
-
-    height: 900px;
-    width: 100%;
-    
-    background: linear-gradient(to bottom, transparent 40%, var(--pallete-one-black) 88%);
-    
-    position: relative;
-    overflow: hidden;
-  }*/
-  
-  
   .landingGreeting{
     display: flex;
     flex-direction: column;
@@ -54,6 +40,7 @@ export const Landing = styled.main`
     content: '>> ';
   }
 
+
   @keyframes spin {
     from{
       transform: rotate(0deg);
@@ -62,6 +49,8 @@ export const Landing = styled.main`
       transform: rotate(360deg);
     }
   }
+
+ 
   .sectionOne_bkg{
     position: absolute;
     z-index: -1;
@@ -73,8 +62,31 @@ export const Landing = styled.main`
     top: 380px;
     left: 22vw;
 
-    animation: spin 100s linear infinite;
+    animation: spin 200s linear infinite;
   }
+
+  
+  .title{
+    margin-left: 6vw;
+  }
+
+  .landingResume__text{
+
+    margin: 14% 6vw;
+    font-size: var(--font-size-medium);
+  }
+  .sectionTwo_bkg{
+    position: absolute;
+    z-index: -1;
+  
+    left: 0;
+    width: 86%;
+    height: auto;
+
+    top: 136px;
+    left: -2vw;
+  }
+
   @media (min-width: 680px) {
 
 
