@@ -22,9 +22,13 @@ export const Landing = styled.main`
   .landingGreeting__item--img{
     margin-bottom: 5px;
   }
+  
+  .title{
+    margin-left: 6vw;
+  }
 
 
-
+/*--------------Section One----------------------*/
   .landingIntro {
     height: 45%;
     margin-left: 5vw;
@@ -66,10 +70,7 @@ export const Landing = styled.main`
   }
 
   
-  .title{
-    margin-left: 6vw;
-  }
-
+/*--------------Section Two----------------------*/
   .landingResume__text{
 
     margin: 14% 6vw;
@@ -85,7 +86,35 @@ export const Landing = styled.main`
 
     top: 136px;
     left: -2vw;
+    
   }
+
+
+/*--------------Section Three----------------------*/
+.projectContainer{
+  width: 90vw;
+  margin: 5% auto;
+}
+
+.projectContainer__item{
+  font-size: var(--font-size-large);
+  font-weight: var(--font-w-xlight);
+  border-bottom: 1px solid var(--palette-one-white);
+  margin: 0 40% 0 2vw;
+}
+.title__right{
+  text-align: right;
+  margin: 0 2vw 0 40%;
+}
+
+.projectContainer__slide{
+  height: 258px;
+  width: 100%;
+  margin: 10% auto;
+  border-radius: 9px;
+  background-color: var(--palette-one-white);
+}
+
 
   @media (min-width: 680px) {
 
