@@ -2,48 +2,142 @@ import styled from 'styled-components';
 
 export const Landing = styled.main`
   height: 100vh;
-  padding: 80px 0px 10px 0px;
+  padding-bottom: 10px;
 
-  .landingGreeting {
-    width: 90%;
-    margin: 30px auto;
-    text-align: center;
+  
+  .landingGreeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 15%;
+    margin-bottom: 30%;
+    height: 12%;
   }
   .landingGreeting__item {
-    font-weight: var(--font-w-regular);
+    font-weight: var(--font-w-xlight);
+    font-size: var(--font-size-xlarge);
+  }
+  .landingGreeting__item--img{
+    margin-bottom: 5px;
+  }
+  
+  .title{
+    margin-left: 6vw;
   }
 
+
+/*--------------Section One----------------------*/
   .landingIntro {
-    padding: 0 0 0 4vw;
+    height: 45%;
+    margin-left: 5vw;
   }
 
   .landingIntro__item {
-    position: relative;
-    z-index: -1;
     margin-bottom: 28px;
-
     font-size: 23px;
-    font-weight: var(--font-w-regular);
+    font-weight: var(--font-w-xlight);
+    font-size: var(--font-size-medium);
   }
   .landingIntro__item::before {
     content: '>> ';
   }
 
-  @media (min-width: 680px) {
-    padding: 85px 0px 10px 0px;
 
-    .landingIntro {
-      margin-top: 80px;
-      padding: 0 0 0 5vw;
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+ 
+  .sectionOne_bkg{
+    position: absolute;
+    z-index: -1;
+  
+    left: 0;
+    width: 150%;
+    height: auto;
+
+    top: 380px;
+    left: 22vw;
+
+    animation: spin 200s linear infinite;
+  }
+
+  
+/*--------------Section Two----------------------*/
+  .landingResume__text{
+
+    margin: 14% 6vw;
+    font-size: var(--font-size-medium);
+  }
+  .sectionTwo_bkg{
+    position: absolute;
+    z-index: -1;
+  
+    left: 0;
+    width: 86%;
+    height: auto;
+
+    top: 136px;
+    left: -2vw;
+    
+  }
+
+
+/*--------------Section Three----------------------*/
+.projectContainer{
+  width: 90vw;
+  margin: 5% auto;
+}
+
+.projectContainer__item{
+  font-size: var(--font-size-large);
+  font-weight: var(--font-w-xlight);
+  border-bottom: 1px solid var(--palette-one-white);
+  margin: 0 40% 0 2vw;
+}
+.title__right{
+  text-align: right;
+  margin: 0 2vw 0 40%;
+}
+
+.projectContainer__slide{
+  height: 258px;
+  width: 100%;
+  margin: 10% auto;
+  border-radius: 9px;
+  background-color: var(--palette-one-white);
+}
+
+
+  @media (min-width: 680px) {
+
+
+    .sectionOne {
+      height: 1120px;
     }
 
     .landingIntro__item {
       margin-bottom: 28px;
-
       font-size: 30px;
       letter-spacing: 3px;
     }
+
+
+    .sectionOne_bkg{
+      width: 100%;
+      top: 350px;
+      left: 46%;
   }
+}
+
+ 
   @media (min-width: 1024px) {
     .landingIntro {
       margin-top: 80px;
@@ -55,49 +149,5 @@ export const Landing = styled.main`
       font-size: 38px;
       letter-spacing: 4px;
     }
-  }
-`;
-
-export const Background = styled.div`
-  height: 100vh;
-  position: relative;
-  z-index: -2;
-
-  .reactBG {
-    position: absolute;
-    left: -15%;
-    display: block;
-    z-index: -1;
-    width: 34vw;
-
-    object-fit: cover;
-    object-position: left top;
-
-    animation: App-logo-spin infinite 50s linear;
-
-    @keyframes App-logo-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg);
-      }
-    }
-  }
-
-  .pythonBG {
-    position: absolute;
-    right: -0%;
-    top: 70%;
-    z-index: -1;
-    width: 18vw;
-  }
-
-  @media (min-width: 680px) {
-    .pythonBG {
-      top: 100%;
-    }
-  }
-  @media (min-width: 1024px) {
   }
 `;
