@@ -1,7 +1,12 @@
 import python from '../assets/images/python-logo.svg';
 import react from '../assets/images/reactBG2.svg';
 import SymbolSample from '../assets/images/SymbolSample.svg'
+import email from '../assets/images/Email.svg';
+import github from '../assets/images/Github.svg';
+import linkedin from '../assets/images/LinkedIn.svg';
+
 import ContentSection from '../components/csection/contentSection';
+import NetworksItem from '../components/socialNetworks/networksItemComponent';
 import { Landing } from '../styles/pageStyles/landingPage';
 
 const LandingPage = () => {
@@ -29,9 +34,9 @@ const LandingPage = () => {
           <h1 className='sectionTitle'>Sobre mim</h1>
           <p className='landingResume__text'>
             I've been studying IT since high school, where it was integrated with web development. There I learned the principles of logic, programming, and databases using C, Java, and MySQL.
-            <br/><br/>
+            <br /><br />
             After that, I completed a 2,000-hour course in web development, with half of it focused on the front end, including HTML, CSS, JavaScript, and React, and the other half on the back end, utilizing PostgreSQL, Python, and libraries such as Flask and Django to create REST APIs. And all of that working with the agile methods of Scrum and Kanban with random teams to simulate a real-life development team.
-            <br/><br/>
+            <br /><br />
             In my current job, I assist the IT department of a food distribution company with SQL reports on the ERP Sankhya and use the IReport program to build some of them. I believe that I can aggregate with my versatile and adaptable personality, strong will to learn new technologies and ease and enjoyment of working in a group.</p>
         </ContentSection>
 
@@ -50,7 +55,17 @@ const LandingPage = () => {
           </div>
         </ContentSection>
 
-      </Landing>
+        <ContentSection className='sectionFour'>
+          <h1 className='sectionTitle'>Entre em contato</h1>
+
+          <ul className="contactList">
+            <NetworksItem imgPath={email} linkPath={'https://www.google.com/'} linkText={'ferreirasilva.luan13@gmail.com'}></NetworksItem>
+            <NetworksItem imgPath={github} linkPath={'https://github.com/luan-ferreir4'} linkText={'luan-ferreir4'}></NetworksItem>
+            <NetworksItem imgPath={linkedin} linkPath={'https://www.linkedin.com/in/luanferreira02/'} linkText={'luanferreira02'}></NetworksItem>
+          </ul>
+        </ContentSection>
+
+      </Landing >
       {/*
       <Background>
         <img className={'pythonBG'} src={python} alt='Python' />

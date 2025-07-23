@@ -1,8 +1,9 @@
 // Add prop to select social media within a object
-const NetworksItem = () => {
+const NetworksItem = ({imgPath, linkPath, linkText}) => {
   return (
     <li>
-      <a href='#'>#</a>
+      <img src={imgPath} alt="Network" />
+      <a href={linkPath}>{linkText}</a>
     </li>
   );
 };
