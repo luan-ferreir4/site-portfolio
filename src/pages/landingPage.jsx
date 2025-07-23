@@ -26,7 +26,7 @@ const LandingPage = () => {
         <ContentSection className='sectionTwo'>
           <img className='sectionTwo_bkg' src={python} alt='Python' />
 
-          <h1 className='landingGreeting__item title'>{'>> Sobre mim'}</h1>
+          <h1 className='sectionTitle'>Sobre mim</h1>
           <p className='landingResume__text'>
             I've been studying IT since high school, where it was integrated with web development. There I learned the principles of logic, programming, and databases using C, Java, and MySQL.
             <br/><br/>

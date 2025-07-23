@@ -22,11 +22,18 @@ export const Landing = styled.main`
   .landingGreeting__item--img{
     margin-bottom: 5px;
   }
-  
-  .title{
-    margin-left: 6vw;
+  .landingIntro__item::before{
+    content: '>> ';
   }
 
+  .sectionTitle{
+    font-weight: var(--font-w-xlight);
+    font-size: var(--font-size-large);
+     margin-left: 6vw;
+  }
+  .sectionTitle::before {
+    content: '>> ';
+  }
 
 /*--------------Section One----------------------*/
   .landingIntro {
@@ -40,9 +47,7 @@ export const Landing = styled.main`
     font-weight: var(--font-w-xlight);
     font-size: var(--font-size-medium);
   }
-  .landingIntro__item::before {
-    content: '>> ';
-  }
+  
 
 
   @keyframes spin {
@@ -114,6 +119,10 @@ export const Landing = styled.main`
   border-radius: 9px;
   background-color: var(--palette-one-white);
 }
+
+/*--------------Section Four----------------------*/
+
+
 
 
   @media (min-width: 680px) {
