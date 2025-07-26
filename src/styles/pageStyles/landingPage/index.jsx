@@ -121,6 +121,10 @@ export const Landing = styled.main`
 }
 
 /*--------------Section Four----------------------*/
+.sectionFour{
+  padding-top: 20%;
+}
+
 .contactList{
   height: 40%;
   display: flex;
@@ -148,7 +152,7 @@ export const Landing = styled.main`
   height: 20%;
   width: 40%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 
