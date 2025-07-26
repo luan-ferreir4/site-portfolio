@@ -122,7 +122,7 @@ export const Landing = styled.main`
 
 /*--------------Section Four----------------------*/
 .sectionFour{
-  padding-top: 20%;
+  padding-top: 30%;
 }
 
 .contactList{
