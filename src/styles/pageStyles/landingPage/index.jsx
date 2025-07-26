@@ -121,8 +121,35 @@ export const Landing = styled.main`
 }
 
 /*--------------Section Four----------------------*/
+.contactList{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
+  list-style: none;
+  padding-inline: 0;
 
+  margin: 15% auto;
+  margin-left: 8%;
+}
+
+.contactList__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contactList__item img{
+  width: 48px;
+  margin-right: 5%;
+}
+
+.sectionFooter {
+  height: 20%;
+  width: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
 
 
   @media (min-width: 680px) {

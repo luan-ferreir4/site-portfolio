@@ -4,6 +4,7 @@ import SymbolSample from '../assets/images/SymbolSample.svg'
 import email from '../assets/images/Email.svg';
 import github from '../assets/images/Github.svg';
 import linkedin from '../assets/images/LinkedIn.svg';
+import SymbolSampleEnding from '../assets/images/SymbolSampleEnding.svg'
 
 import ContentSection from '../components/csection/contentSection';
 import NetworksItem from '../components/socialNetworks/networksItemComponent';
@@ -58,11 +59,13 @@ const LandingPage = () => {
         <ContentSection className='sectionFour'>
           <h1 className='sectionTitle'>Entre em contato</h1>
 
-          <ul className="contactList">
-            <NetworksItem imgPath={email} linkPath={'https://www.google.com/'} linkText={'ferreirasilva.luan13@gmail.com'}></NetworksItem>
-            <NetworksItem imgPath={github} linkPath={'https://github.com/luan-ferreir4'} linkText={'luan-ferreir4'}></NetworksItem>
-            <NetworksItem imgPath={linkedin} linkPath={'https://www.linkedin.com/in/luanferreira02/'} linkText={'luanferreira02'}></NetworksItem>
+          <ul className='contactList'>
+            <NetworksItem className='contactList__item' imgPath={github} linkPath={'https://github.com/luan-ferreir4'} linkText={'luan-ferreir4'}></NetworksItem>
+            <NetworksItem className='contactList__item' imgPath={linkedin} linkPath={'https://www.linkedin.com/in/luanferreira02/'} linkText={'luanferreira02'}></NetworksItem>
+            <NetworksItem className='contactList__item' imgPath={email} linkPath={'https://www.google.com/'} linkText={'ferreirasilva.luan13@gmail.com'}></NetworksItem>
           </ul>
+
+          <img className='sectionFooter' src={SymbolSampleEnding} alt='data-tags-ending' />
         </ContentSection>
 
       </Landing >
