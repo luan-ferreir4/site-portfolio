@@ -62,7 +62,7 @@ const LandingPage = () => {
           <ul className='contactList'>
             <NetworksItem className='contactList__item' imgPath={github} linkPath={'https://github.com/luan-ferreir4'} linkText={'luan-ferreir4'}></NetworksItem>
             <NetworksItem className='contactList__item' imgPath={linkedin} linkPath={'https://www.linkedin.com/in/luanferreira02/'} linkText={'luanferreira02'}></NetworksItem>
-            <NetworksItem className='contactList__item' imgPath={email} linkPath={'https://www.google.com/'} linkText={'ferreirasilva.luan13@gmail.com'}></NetworksItem>
+            <NetworksItem className='contactList__item' imgPath={email} linkPath={'#'} linkText={'ferreirasilva.luan13@gmail.com'}></NetworksItem>
           </ul>
 
           <img className='sectionFooter' src={SymbolSampleEnding} alt='data-tags-ending' />
