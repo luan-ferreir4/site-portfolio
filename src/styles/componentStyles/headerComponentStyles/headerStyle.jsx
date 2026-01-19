@@ -59,7 +59,7 @@ export const DesktopContent = styled.section`
       right: 0;
       left: 0;
 
-      width: 100px;
+      width: 80px;
       margin: 0 auto;
     }
   }
