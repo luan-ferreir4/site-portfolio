@@ -2,6 +2,7 @@
   "name": "site-portfolio-",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "yarn@4.1.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
