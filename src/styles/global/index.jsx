@@ -13,8 +13,8 @@ const GlobalStyles = createGlobalStyle`
     --font-type-rokkit: 'Rokkitt', serif;
 
     --font-size-xsmall: 12px;
-    --font-size-small: 14px;
-    --font-size-standart: 16px;
+    --font-size-small: 15px;
+    --font-size-standard: 16px;
     --font-size-medium: 18px;
     --font-size-large: 26px;
     --font-size-xlarge: 32px;

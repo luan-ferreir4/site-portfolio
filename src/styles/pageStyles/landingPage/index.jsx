@@ -77,9 +77,8 @@ export const Landing = styled.main`
   
 /*--------------Section Two----------------------*/
   .landingResume__text{
-
-    margin: 14% 6vw;
-    font-size: var(--font-size-medium);
+    margin: 8% 6vw;
+    font-size: var(--font-size-small);
   }
   .sectionTwo_bkg{
     position: absolute;
@@ -91,33 +90,37 @@ export const Landing = styled.main`
 
     top: 136px;
     left: -2vw;
-    
   }
 
 
 /*--------------Section Three----------------------*/
 .projectContainer{
+  height: 100%;
   width: 90vw;
   margin: 5% auto;
 }
 
-.projectContainer__item{
+.projectContainer__title{
   font-size: var(--font-size-large);
   font-weight: var(--font-w-xlight);
   border-bottom: 1px solid var(--palette-one-white);
   margin: 0 40% 0 2vw;
+  height: 5%;
 }
 .title__right{
   text-align: right;
   margin: 0 2vw 0 40%;
 }
 
-.projectContainer__slide{
-  height: 258px;
-  width: 100%;
-  margin: 10% auto;
-  border-radius: 9px;
-  background-color: var(--palette-one-white);
+.projectContainer__list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  list-style: none;
+  padding-inline: 0;
+  height: 25%;
+  margin-left: 2%;
 }
 
 /*--------------Section Four----------------------*/
