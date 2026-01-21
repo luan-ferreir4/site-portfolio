@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   display: none;
-  @media (min-width:1024px) {
+  @media (min-width:680px) {
     width: 100%;
     height: 50px;
     position: relative;
