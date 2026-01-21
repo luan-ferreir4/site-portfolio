@@ -11,4 +11,8 @@ export const Csection = styled.section `
     
     position: relative;
     overflow: hidden;
+
+@media (min-width: 680px) {
+    background: linear-gradient(to bottom, transparent 40%, var(--pallete-one-black) 100%);
+}
 `
