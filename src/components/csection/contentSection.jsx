@@ -1,7 +1,7 @@
 import { Csection } from "../../styles/componentStyles/csectionComponentStyle/csectionStyle";
-const ContentSection = ({ children, className}) => {
+const ContentSection = ({ children, id,className}) => {
     return (
-        <Csection className={className}>
+        <Csection id={id} className={className}>
             {children}
         </Csection>
     );
