@@ -129,19 +129,11 @@ export const Landing = styled.main`
     margin-left: 2%;
   }
   .projectContainer__listItem{
-    width: fit-content;
-    padding-bottom: 6px;
-    border-bottom: 1px solid transparent;
-    &:hover {
-    border-bottom: 1px solid var(--palette-one-white);
-    transition: 0.2s;
-    }
-  transition: 0.2s;
+    width: 60%
   }
   .projectContainer__listItem:hover{
     color: var(--palette-one-gray-l);
-    border-bottom: 1px solid var(--palette-one-white);
-    transition-delay: 100ms;
+    border-bottom: 1px dotted var(--palette-one-white);
   }
 
 /*--------------Section Four----------------------*/
@@ -182,12 +174,8 @@ export const Landing = styled.main`
 
 
 @media (min-width: 680px) {
-/*--------------Section One 680px----------------------*/
-    .sectionOne{
-      height: 1010px
-    }
-    .landingGreeting{
-      margin: 8% auto;
+    .sectionOne {
+      height: 1120px;
     }
 
     .landingIntro__item {
@@ -256,6 +244,12 @@ export const Landing = styled.main`
     .landingIntro {
       margin-top: 80px;
       padding: 0 0 0 55px;
+    }
+    .landingIntro__item {
+      margin-bottom: 28px;
+
+      font-size: 38px;
+      letter-spacing: 4px;
     }
 }
 `;
