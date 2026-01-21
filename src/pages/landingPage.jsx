@@ -8,13 +8,15 @@ import SymbolSampleEnding from '../assets/images/SymbolSampleEnding.svg'
 
 import ContentSection from '../components/csection/contentSection';
 import NetworksItem from '../components/socialNetworks/networksItemComponent';
+import HeaderComponent from '../components/header/headerComponent';
 import { Landing } from '../styles/pageStyles/landingPage';
 
 const LandingPage = () => {
   return (
     <>
       <Landing>
-        <ContentSection className='sectionOne'>
+        <HeaderComponent/>
+        <ContentSection id='sctnOne' className='sectionOne'>
           <img className='sectionOne_bkg' src={react} alt='React' />
 
           <div className='landingGreeting'>
@@ -29,7 +31,7 @@ const LandingPage = () => {
           </div>
         </ContentSection>
 
-        <ContentSection className='sectionTwo'>
+        <ContentSection id='sctnTwo' className='sectionTwo'>
           <img className='sectionTwo_bkg' src={python} alt='Python' />
 
           <h1 className='sectionTitle'>Sobre mim</h1>
@@ -45,7 +47,7 @@ const LandingPage = () => {
             Acredito que posso me agregar a diferentes ambientes de trabalho graças à minha personalidade versátil e adaptável, à minha forte vontade de aprender novas tecnologias e à minha facilidade e prazer em trabalhar em grupo.</p>
         </ContentSection>
 
-        <ContentSection className='sectionThree'>
+        <ContentSection id='sctnThree' className='sectionThree'>
           <div className='projectContainer'>
             <h1 className='projectContainer__title' >Alguns Projetos</h1>
             <ul className='projectContainer__list'>
@@ -62,7 +64,7 @@ const LandingPage = () => {
           </div>
         </ContentSection>
 
-        <ContentSection className='sectionFour'>
+        <ContentSection id='sctnFour' className='sectionFour'>
           <h1 className='sectionTitle'>Entre em contato</h1>
           <ul className='contactList'>
             <NetworksItem className='contactList__item' imgPath={github} linkPath={'https://github.com/luan-ferreir4'} linkText={'luan-ferreir4'}></NetworksItem>

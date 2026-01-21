@@ -180,15 +180,62 @@ export const Landing = styled.main`
 
     .landingIntro__item {
       margin-bottom: 28px;
-      font-size: 30px;
+      font-size: var(--font-size-xlarge);
       letter-spacing: 3px;
     }
 
-
     .sectionOne_bkg{
-      width: 100%;
-      top: 350px;
-      left: 46%;
+      width: 64%;
+      top: 30%;
+      left: 65%;
+  }
+
+/*--------------Section Two 680px----------------------*/
+
+  .landingResume__text{
+    width: 60%;
+    margin: 2% 2% 8% 35%;
+    font-size: var(--font-size-medium);
+  }
+  .sectionTwo_bkg{
+    position: absolute;
+    z-index: -1;
+  
+    width: 30%;
+    height: auto;
+
+    top: 8%;
+    left: 0%;
+  }
+
+/*--------------Section Three 680px----------------------*/
+  .sectionThree{
+   height: 400px;
+  }
+  .projectContainer__title {
+    height: 35px;
+  }
+  .projectContainer__list{
+    height: 365px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+/*--------------Section Four 680px----------------------*/
+  .contactList{
+    margin: 20px auto;
+    margin-left: 8%;
+  }
+  .contactList__item{
+    margin-bottom: 30px;
+  }
+  .contactList__item img{
+    width: 42px;
+  }
+
+  .sectionFooter {
+    height: 10%;
+    width: 20%;
   }
 }
 
