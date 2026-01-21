@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
   }
 
   :root {
@@ -34,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
     --palette-one-gray-l: #797979;
     --palette-one-gray-m: #505050;
     --pallete-one-black: #181818;
+    --pallete-one-dark-black: #0e0e0e;
   }
 
   body {
@@ -59,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: var(--palette-one-white);
   }
 
   img{
